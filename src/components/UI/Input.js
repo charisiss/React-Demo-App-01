@@ -1,12 +1,12 @@
-import classes from "./Input.module.css";
+import classes from './Input.module.css';
 
-function Input(props) {
+const Input = (props) => {
   return (
     <div className={classes.input}>
       <label htmlFor={props.input.id}>{props.label}</label>
-      <input {...props.input}></input>
+      <input {...props.input} />
     </div>
   );
-}
+};
 
 export default Input;
